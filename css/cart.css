@@ -1,0 +1,118 @@
+/*1.导航栏部分*/
+#nav{
+    margin-top:50px;
+}
+/*1.1三列布局*/
+.nav_top{
+    overflow:hidden;
+    margin-bottom:20px;
+}
+/*左列logo*/
+.nav_top>img{
+    float:left;
+    width:168px;
+    border-radius:10px;
+}
+/*中间的搜索框*/
+.search{
+    float:left;
+    margin-left:113px;
+    position:relative;
+}
+.search input{
+    width:380px;
+    height:36px;
+    border:1px solid #999;
+    border-radius:18px;
+    padding:0;
+    padding-left:10px;
+    padding-right:40px;
+}
+.search img{
+    width:36px;
+    height:36px;
+    position:absolute;
+    right:0;
+    top:1px;
+}
+
+/*右侧导航*/
+.nav_top>ul{
+    float:right;
+    margin-top:9px;
+}
+.nav_top>ul>li{
+    float:left;
+}
+.nav_top>ul>li b{
+    margin:0 10px;
+}
+.nav_top>ul>li img{
+    vertical-align:top;
+}
+
+/*1.2文字导航*/
+.nav_bottom a{
+    font-size:20px;
+    margin-right:30px;
+}
+
+/*2.主体*/
+#main{
+    margin-top:50px;
+}
+/*2.1购物车标题*/
+#main>h2{
+    color:#333;
+}
+#main>h2>p{
+    float:right;
+    font-size:14px;
+    color:#9a9a9a;
+    font-weight:400;
+}
+#main>h2>p>span{
+    margin-left:30px;
+}
+#main>h2>p b{
+    font-weight:700;
+    color:#997679;
+    font-size:16px;
+}
+
+/*2.2 工具栏*/
+#main .toolbar{
+    height:35px;
+    line-height:35px;
+    background:#e6e6e5;
+    border-top:1px solid gray;
+    text-align:center;
+    box-shadow:0 2px 3px gray;
+    margin-top:5px;
+    margin-bottom:15px;
+    color:#281111;
+    font-size:14px;
+}
+.toolbar div{
+    float:left;
+}
+/*设置每一栏的宽度*/
+.check{width:62px;}
+.info{width:380px;}
+.price{width:152px;}
+.count{width:150px;}
+.sum{width:130px;}
+.action{width:126px;}
+
+/*2.3商品记录展示*/
+.content{
+
+}
+.item{
+    height:115px;
+    text-align:center;
+}
+.item div{
+    float:left;
+    box-sizing:border-box;
+}
