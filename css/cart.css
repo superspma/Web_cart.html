@@ -59,7 +59,9 @@
 
 /*2.主体*/
 #main{
+    position:relative;
     margin-top:50px;
+    padding-bottom:50px;
 }
 /*2.1购物车标题*/
 #main>h2{
@@ -74,7 +76,7 @@
 #main>h2>p>span{
     margin-left:30px;
 }
-#main>h2>p b{
+.total_count,.total_price{
     font-weight:700;
     color:#997679;
     font-size:16px;
@@ -97,22 +99,122 @@
     float:left;
 }
 /*设置每一栏的宽度*/
-.check{width:62px;}
-.info{width:380px;}
-.price{width:152px;}
-.count{width:150px;}
-.sum{width:130px;}
-.action{width:126px;}
-
+.check{
+    width:62px;
+}
+.info{
+    width:380px;
+}
+.price{
+    width:152px;
+}
+.count{
+    width:150px;
+}
+.sum{
+    width:130px;
+}
+.action{
+    width:126px;cursor:pointer;
+    /*修改鼠标样式指针default  手指pointer*/
+}
 /*2.3商品记录展示*/
 .content{
-
+    /*设置最小高度,*/
+    min-height:400px;
 }
 .item{
     height:115px;
     text-align:center;
+    background:#fff;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    margin-bottom:15px;
 }
 .item div{
     float:left;
+    height:115px;
     box-sizing:border-box;
+    text-align:center;
+}
+/*商品栏设置*/
+.item .check{
+    line-height:115px;
+    border-right:1px solid gray;
+}
+.item .info{border-right:1px solid gray;}
+
+.item .info img{
+    float:left;
+    margin-right:15px;
+    margin-top:15px;
+}
+.item .info p{
+    text-align:left;
+
+}
+.item .info p:nth-child(2){
+    margin:16px 0 10px 0;
+}
+.item .price{border-right:1px solid gray;}
+.item .price h3{
+    color:#281111;
+    margin-top:40px;
+}
+.item .count{border-right:1px solid gray;}
+.item .count a{
+    float:left;
+    width:26px;
+    height:26px;
+    text-align:center;
+    line-height:26px;
+    border:1px solid gray;
+    background:#e8e8e8;
+    font-size:18px;
+}
+.item .count input{
+    float:left;
+    width:30px;
+    height:26px;
+    border:1px solid gray;
+    border-left:0;
+    border-right:none;
+    text-align:center;
+    padding:0;
+    margin-top:43px;
+}
+a.minus{
+    margin-left:34px;
+    margin-top:43px;
+}
+a.add{
+    margin-top:43px;
+}
+.item .sum{border-right:1px solid gray;}
+.item .sum,.item .action{
+    line-height:115px;
+    font-size:18px;
+}
+
+/*2.4底部工具栏*/
+.bottom_bar{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:35px;
+    background:#e8e8e8;
+    line-height:35px;
+}
+.bottom_bar>div{
+    float:right;
+}
+.bottom_bar button{
+    width:120px;
+    height:35px;
+    border:none;
+    background:#997679;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
 }
